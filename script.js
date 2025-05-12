@@ -1,14 +1,12 @@
 
-document.getElementById('quiz-form').addEventListener('submit', function(e) {
-  e.preventDefault();
-  let score = 0;
-  const answers = {
-    q1: 'b',
-    q2: 'b'
-  };
-  for (let key in answers) {
-    const selected = document.querySelector(`input[name="${key}"]:checked`);
-    if (selected && selected.value === answers[key]) score++;
-  }
-  document.getElementById('quiz-result').textContent = `Ты набрал(а) ${score} из 2 баллов.`;
-});
+function checkQuiz() {
+    let q1 = document.querySelector('input[name="q1"]:checked');
+    let q2 = document.querySelector('input[name="q2"]:checked');
+    let score = 0;
+
+    if (q1 && q1.value === "b") score++;
+    if (q2 && q2.value === "b") score++;
+
+    const result = document.getElementById("result");
+    result.textContent = "Ваш результат: " + score + "/2";
+}

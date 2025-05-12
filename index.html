@@ -1,70 +1,48 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Интернет без опасности</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интернет без опасности</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <h1>ИНТЕРНЕТ БЕЗ ОПАСНОСТИ</h1>
-    <p>Гайд по кибербезопасности для школьников</p>
-    <nav>
-      <ul>
-        <li><a href="#">Главная</a></li>
-        <li><a href="#threats">Угрозы</a></li>
-        <li><a href="#rules">Правила безопасности</a></li>
-        <li><a href="#actions">Что делать, если...</a></li>
-        <li><a href="#quiz">Тест</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section id="welcome">
-      <h2>Добро пожаловать!</h2>
-      <p>Ты находишься на сайте, созданном специально для школьников, чтобы научиться быть в безопасности в интернете. Здесь ты найдешь полезные советы, интересные задания, тесты и примеры ситуаций, с которыми можно столкнуться онлайн.</p>
-    </section>
-    <section id="threats">
-      <h2>Угрозы</h2>
-      <p>Среди самых распространённых интернет-угроз: вирусы, фишинг, мошенники, травля и утечка личных данных. Важно уметь их распознавать и избегать. Например, если тебе пишут незнакомцы и просят пароль — это ловушка!</p>
-    </section>
-    <section id="rules">
-      <h2>Правила безопасности</h2>
-      <ul>
-        <li>Не делай личную информацию доступной для всех.</li>
-        <li>Используй сложные пароли и не сообщай их никому.</li>
-        <li>Будь осторожен с незнакомыми ссылками и файлами.</li>
-        <li>Всегда проверяй источники информации.</li>
-        <li>Общайся только с теми, кого ты знаешь.</li>
-      </ul>
-    </section>
-    <section id="actions">
-      <h2>Что делать, если...</h2>
-      <p>...тебе угрожают онлайн? Немедленно сообщи взрослым. Заблокируй обидчика и собери доказательства (скриншоты).</p>
-      <p>...твой аккаунт взломали? Поменяй пароль, напиши в поддержку и предупреди друзей, чтобы не попадались на удочку злоумышленников.</p>
-    </section>
-    <section id="quiz">
-      <h2>Проверь себя</h2>
-      <p>Пройди тест и узнай, насколько хорошо ты разбираешься в кибербезопасности!</p>
-      <form id="quiz-form">
-        <p>1. Что делать, если тебе пишет незнакомец?</p>
-        <label><input type="radio" name="q1" value="a" /> Ответить и познакомиться</label><br />
-        <label><input type="radio" name="q1" value="b" /> Игнорировать и сообщить взрослым</label><br />
-        
-        <p>2. Какой пароль безопаснее?</p>
-        <label><input type="radio" name="q2" value="a" /> 123456</label><br />
-        <label><input type="radio" name="q2" value="b" /> K9f#2Lm!4v</label><br />
-        
-        <button type="submit">Проверить</button>
-      </form>
-      <div id="quiz-result"></div>
-    </section>
-  </main>
-  <footer>
-    <p>Сайт разработан <strong>bxbbye</strong> в рамках школьного проекта по кибербезопасности. Все права защищены © 2025</p>
-  </footer>
-  <script src="script.js"></script>
+    <header>
+        <h1>Интернет без опасности</h1>
+        <p>Гайд по кибербезопасности для школьников</p>
+    </header>
+    <main>
+        <section id="intro">
+            <h2>О проекте</h2>
+            <p>Этот сайт создан Михаилом Ильюшкиным, учеником 9 класса, в рамках учебного проекта. Цель — сделать интернет безопаснее для всех.</p>
+        </section>
+        <section id="threats">
+            <h2>Угрозы в интернете</h2>
+            <p>Здесь описаны основные угрозы: фишинг, вирусы, кибербуллинг, утечка данных и многое другое...</p>
+        </section>
+        <section id="rules">
+            <h2>Правила безопасности</h2>
+            <p>Используй сложные пароли, не переходи по подозрительным ссылкам, обновляй программы и антивирус...</p>
+        </section>
+        <section id="test">
+            <h2>Тест по кибербезопасности</h2>
+            <form id="quizForm">
+                <p>1. Что такое фишинг?<br>
+                <input type="radio" name="q1" value="a"> Вид рыбалки<br>
+                <input type="radio" name="q1" value="b"> Мошенничество с поддельными сайтами</p>
+
+                <p>2. Какой пароль надёжнее?<br>
+                <input type="radio" name="q2" value="a"> 123456<br>
+                <input type="radio" name="q2" value="b"> H8!kd#4Ls</p>
+
+                <button type="button" onclick="checkQuiz()">Проверить</button>
+            </form>
+            <div id="result"></div>
+        </section>
+    </main>
+    <footer>
+        <p>Сайт создан в рамках проекта по кибербезопасности — 2025</p>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>

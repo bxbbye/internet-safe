@@ -1,63 +1,29 @@
 
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background: url('background.png') no-repeat center center fixed;
-  background-size: cover;
-  margin: 0;
-  padding: 0;
-  color: #0a1f44;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/bg.png');
+    background-size: cover;
+    color: #ffffff;
+    text-shadow: 0 0 3px #000;
 }
-
-header {
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px;
+header, footer {
+    background: rgba(0, 0, 50, 0.7);
+    padding: 20px;
+    text-align: center;
 }
-
-header h1 {
-  font-size: 2.5em;
-  color: #003377;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  background-color: rgba(255, 255, 255, 0.6);
-  border-radius: 12px;
-  margin: 20px auto;
-  max-width: 600px;
-}
-
-nav li {
-  margin: 0 15px;
-}
-
-nav a {
-  text-decoration: none;
-  color: #003377;
-  font-weight: bold;
-}
-
 main {
-  padding: 30px;
-  background-color: rgba(255, 255, 255, 0.85);
-  max-width: 900px;
-  margin: 20px auto;
-  border-radius: 15px;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.5);
 }
-
-section {
-  margin-bottom: 40px;
+h1, h2 {
+    color: #87CEFA;
 }
-
-h2 {
-  color: #003377;
-}
-
-footer {
-  text-align: center;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.1);
+button {
+    padding: 10px;
+    background: #4682B4;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
